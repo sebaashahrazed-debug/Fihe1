@@ -1,62 +1,59 @@
 # Fihe1
 
-#include <iostream>
-#include <string>
-using namespace std;
+#include <stdio.h>
+#include <string.h>
 
 int main() {
     int choice;
     int shift;
-    string message;
+    char message[101];
+    char result[101];
 
-   cout << "Choose operation:\n";
-    cout << "1. Encode\n";
-    cout << "2. Decode\n";
-    cout << "Enter choice: ";
-    cin >> choice;
+ printf("Choose operation:\n");
+    printf("1. Encode\n");
+    printf("2. Decode\n");
+    printf("Enter choice: ");
+    scanf("%d", &choice);
 
-   cin.ignore(); // clear buffer
+ getchar(); // clear buffer
 
-   cout << "\nEnter your message: ";
-    getline(cin, message);
+printf("\nEnter your message: ");
+fgets(message, 100, stdin);
 
-  cout << "Enter shift key (1-25): ";
-    cin >> shift;
+  printf("Enter shift key (1-25): ");
+scanf("%d", &shift);
 
-  // For decoding, we reverse the shift
-    if (choice == 2) {
+// If decoding, reverse the shift
+if (choice == 2) {
         shift = -shift;
     }
-
-   string result = message;
-
-   for (int i = 0; i < message.length(); i++) {
-        char c = message[i];
-
-   // Uppercase letters
+for (int i = 0; message[i] != '\0'; i++) {
+char c = message[i];
+ // Uppercase letters
         if (c >= 'A' && c <= 'Z') {
-           result[i] = char((c - 'A' + shift + 26) % 26 + 'A');
+ result[i] = (char)((c - 'A' + shift + 26) % 26 + 'A');
         }
-        // Lowercase letters
+ // Lowercase letters
         else if (c >= 'a' && c <= 'z') {
-            result[i] = char((c - 'a' + shift + 26) % 26 + 'a');
+result[i] = (char)((c - 'a' + shift + 26) % 26 + 'a');
         }
-        // Other characters remain unchanged
-        else {
+// Other characters stay the same
+ else {
             result[i] = c;
         }
     }
 
-  cout << "\n============================\n";
-    cout << "Original Message: " << message << endl;
-    cout << "Shift Key: " << abs(shift) << endl;
+printf("\n============================\n");
+ printf("Original Message: %s", message);
+ printf("Shift Key: %d\n",shift < 0 ? -shift : shift);
 
-   if (choice == 1)
-        cout << "Encoded Message: " << result << endl;
+  if (choice == 1)
+printf("Encoded Message: %s", result);
     else
-        cout << "Decoded Message: " << result << endl;
+ printf("Decoded Message:
+        %s", result);
 
-   cout << "============================\n";
+printf("============================\n");
 
-   return 0;
+ return 0;
 }
