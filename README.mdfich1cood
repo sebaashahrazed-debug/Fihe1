@@ -1,72 +1,89 @@
-Djilali Bounaama University – Khemis Miliana
-
----
-
-Secret Message Encoder (Caesar Cipher)
-
-Academic Project Report
 
 
----
+Student Information
 
-Student Name: Chahrazad Sebaa
-University: Djilali Bounaama University – Khemis Miliana
-Academic Year: 2025 / 3026
-
-
----
+First Name: Chahrazad
+Last Name: Sebaa
+University: Djilali Bounaama University of Khemis Miliana
+Faculty: Faculty of Matter Sciences and Computer Science
+Academic Year: 2025/2026
 
 Introduction
 
-Cryptography is an important field in computer science that focuses on securing information and protecting it from unauthorized access. One of the oldest and simplest encryption techniques is the Caesar Cipher, which was used by Julius Caesar to send secret messages. This technique is based on shifting each letter of a message by a fixed number of positions in the alphabet.
+Information security is an important field in computer science. One of the oldest and simplest encryption methods is the Caesar Cipher, which was used to protect secret messages by shifting letters in the alphabet. This project presents a simple C++ program that encodes and decodes messages using this technique.
+Project Objectives
+The objectives of this project are:
+To understand the basic concept of encryption and decryption.
+To apply the Caesar Cipher algorithm in C++.
+To practice using strings, loops, and conditional statements.
+To correctly handle user input and output.
+Description of the Caesar Cipher
+The Caesar Cipher is based on shifting letters by a fixed number called the shift key.
+Encoding shifts letters forward in the alphabet.
+Decoding shifts letters backward using the same key.
+Uppercase letters remain uppercase.
+Lowercase letters remain lowercase.
+Non-alphabetic characters such as spaces, numbers, and symbols are not modified.
 
-The aim of this project is to implement a simple Caesar Cipher program using C++, allowing the user to encode and decode messages while preserving letter cases and non-alphabetic characters.
+Algorithm
 
+splay a menu to choose encoding or decoding.
+Ask the user to enter a text message.
+Ask the user to enter a shift key (between 1 and 25).
+Process each character of the message:
+If it is a letter, apply the shift.
+If it is not a letter, keep it unchanged.
+Display the final encoded or decoded message.
+Implementation in C++
 
----
-
-Presentation (Project Description)
-
-The objective of this project is to design and implement a C++ program that applies the Caesar Cipher encryption and decryption technique.
-
-Program Workflow:
-
-1. The program asks the user to choose an operation: encoding or decoding.
-
-
-2. The user enters a text message.
-
-
-3. The user provides a shift key between 1 and 25.
-
-
-4. Each character of the message is analyzed:
-
-Uppercase letters remain uppercase after shifting.
-
-Lowercase letters remain lowercase after shifting.
-
-Spaces, numbers, and symbols remain unchanged.
-
-
-
-5. The final encoded or decoded message is displayed on the screen.
-
+CThe program is written in C++ and uses:
+The string data type to store text.
+A for loop to scan each character.
+Conditional statements to check character ranges.
+ASCII values and modulo operation to manage letter shifting and wrap-around.
+This implementation ensures correct results for both uppercase and lowercase letters.
 
 
-The program uses the printf and scanf functions for input and output operations. Modulo arithmetic is applied to ensure correct alphabet wrapping from Z to A and from z to a.
+Exampl
 
-
----
+eput Message:
+HELLO WORLD
+Shift Key:
+3
+Output (Encoded Message):
+KHOOR ZRUOG
+Using the same key to decode the message restores the original text.
 
 Conclusion
 
-In conclusion, this project demonstrates the practical implementation of the Caesar Cipher encryption method using C++. Although this algorithm is not secure for modern encryption purposes, it is very useful for understanding basic cryptographic concepts and string manipulation techniques.
-
-Through this project, we enhanced our programming skills, improved our understanding of character processing, and gained experience in building simple yet functional encryption programs.
+Project demonstrates a simple and effective way to implement the Caesar Cipher using C++. Although this encryption method is not secure for modern systems, it is very useful for learning the basics of cryptography and programming. The project helps improve logical thinking and understanding of string manipulation in C++.
 
 
----
 
-End of Report
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
