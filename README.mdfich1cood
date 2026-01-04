@@ -1,0 +1,77 @@
+Djilali Bounaama University – Khemis Miliana
+
+Faculty of Science and Technology
+
+Department of Computer Science
+
+
+---
+
+Secret Message Encoder (Caesar Cipher)
+
+Academic Project Report
+
+
+---
+
+Student Name: Chahrazad Sebaa
+University: Djilali Bounaama University – Khemis Miliana
+Academic Year: 2025 / 3026
+
+
+---
+
+Introduction
+
+Cryptography is an important field in computer science that focuses on securing information and protecting it from unauthorized access. One of the oldest and simplest encryption techniques is the Caesar Cipher, which was used by Julius Caesar to send secret messages. This technique is based on shifting each letter of a message by a fixed number of positions in the alphabet.
+
+The aim of this project is to implement a simple Caesar Cipher program using C++, allowing the user to encode and decode messages while preserving letter cases and non-alphabetic characters.
+
+
+---
+
+Presentation (Project Description)
+
+The objective of this project is to design and implement a C++ program that applies the Caesar Cipher encryption and decryption technique.
+
+Program Workflow:
+
+1. The program asks the user to choose an operation: encoding or decoding.
+
+
+2. The user enters a text message.
+
+
+3. The user provides a shift key between 1 and 25.
+
+
+4. Each character of the message is analyzed:
+
+Uppercase letters remain uppercase after shifting.
+
+Lowercase letters remain lowercase after shifting.
+
+Spaces, numbers, and symbols remain unchanged.
+
+
+
+5. The final encoded or decoded message is displayed on the screen.
+
+
+
+The program uses the printf and scanf functions for input and output operations. Modulo arithmetic is applied to ensure correct alphabet wrapping from Z to A and from z to a.
+
+
+---
+
+Conclusion
+
+In conclusion, this project demonstrates the practical implementation of the Caesar Cipher encryption method using C++. Although this algorithm is not secure for modern encryption purposes, it is very useful for understanding basic cryptographic concepts and string manipulation techniques.
+
+Through this project, we enhanced our programming skills, improved our understanding of character processing, and gained experience in building simple yet functional encryption programs.
+
+
+---
+
+End of Report
+
